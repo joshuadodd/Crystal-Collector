@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Crystals Collector</title>
     <!--<link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -18,26 +19,32 @@
             <p>The value of each crystal is hidden from you untill you click on it.</p>
             <p>Each time when the game starts, the game will change the values of each crystal.</p></small></h1>
         </div>
-        <div class="row">
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                    <img src="assets/images/crystal1.jpg" alt="...">
-                </a>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                    <img src="assets/images/crystal2.jpg" alt="...">
-                </a>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                    <img src="assets/images/crystal3.jpg" alt="...">
-                </a>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                    <img src="assets/images/crystal4.jpg" alt="...">
-                </a>
+        <div class="random">
+        <div class="number">
+        </div>
+        <div class="math"></div>
+        <div class='power'>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="assets/images/crystal1.jpg" class='click' id='crystal1'>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="assets/images/crystal2.jpg" class='click' id='crystal2'>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="assets/images/crystal3.jpg" class='click' id='crystal3'>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="assets/images/crystal4.jpg" class='click' id='crystal4'>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -46,44 +53,47 @@
                     <div class="panel-heading">
                         <h3 class="panel-title">Target Score</h3>
                     </div>
-                    <div class="panel-body">
-                        Target =
+                    <div id="targetNumber" class="panel-body">
+                        Target Number
                     </div>
                 </div>
             </div>
-            <div class="col-xs-6 col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Your Score</h3>
-                    </div>
-                    <div class="panel-body">
-                        Score =
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Wins</h3>
-                    </div>
-                    <div class="panel-body">
-                        Wins =
+            <div class="score">
+                <div class="col-xs-6 col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Your Score</h3>
+                        </div>
+                        <div id="playerScore" class="panel-body">
+                            Your Score
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-6 col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Loses</h3>
+            <div class="outcome">
+                <div class="col-xs-6 col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Wins</h3>
+                        </div>
+                        <div class="panel-body">
+                            Wins =
+                        </div>
                     </div>
-                    <div class="panel-body">
-                        Loses =
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Loses</h3>
+                        </div>
+                        <div class="panel-body">
+                            Loses =
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
     <script src="http://code.jquery.com/jquery.js"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
